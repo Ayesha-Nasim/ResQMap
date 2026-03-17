@@ -1,0 +1,263 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+
+export const AuthStyles = StyleSheet.create({
+
+  container: {
+    flex: 1,
+    backgroundColor: '#0A1128',
+  },
+  scrollContainer: {
+    flexGrow: 1,
+  },
+  content: {
+    flex: 1,
+    paddingHorizontal: 32,
+    paddingTop: height * 0.12,
+    paddingBottom: 40,
+  },
+
+  backgroundCircle1: {
+    position: 'absolute',
+    width: 300,
+    height: 300,
+    borderRadius: 150,
+    backgroundColor: 'rgba(74, 144, 226, 0.1)',
+    top: -100,
+    right: -100,
+  },
+  backgroundCircle2: {
+    position: 'absolute',
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+    bottom: -50,
+    left: -50,
+  },
+
+  header: {
+    alignItems: 'center',
+    marginBottom: 48,
+  },
+  logoContainer: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 24,
+    borderWidth: 2,
+    borderColor: 'rgba(74, 144, 226, 0.3)',
+    shadowColor: '#4A90E2',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 20,
+    elevation: 15,
+  },
+  logoIcon: {
+    fontSize: 48,
+    color: '#4A90E2',
+  },
+  title: {
+    fontSize: 42,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    marginBottom: 8,
+    textAlign: 'center',
+    letterSpacing: -0.5,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: 'rgba(255, 255, 255, 0.7)',
+    textAlign: 'center',
+    lineHeight: 22,
+    fontWeight: '500',
+  },
+
+  formContainer: {
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    borderRadius: 28,
+    padding: 28,
+    marginBottom: 24,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+    backdropFilter: 'blur(20px)',
+  },
+  inputContainer: {
+    marginBottom: 24,
+  },
+  inputLabel: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: 'rgba(255, 255, 255, 0.8)',
+    marginBottom: 12,
+    marginLeft: 8,
+  },
+  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    borderWidth: 2,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: 20,
+    paddingHorizontal: 24,
+    paddingVertical: 18,
+    fontSize: 16,
+    color: '#FFFFFF',
+    fontWeight: '500',
+  },
+  inputFocused: {
+    borderColor: '#4A90E2',
+    backgroundColor: 'rgba(74, 144, 226, 0.1)',
+    shadowColor: '#4A90E2',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
+    elevation: 8,
+  },
+  passwordContainer: {
+    position: 'relative',
+  },
+  passwordToggle: {
+    position: 'absolute',
+    right: 20,
+    top: 18,
+    zIndex: 1,
+    padding: 8,
+  },
+  passwordToggleText: {
+    color: '#4A90E2',
+    fontSize: 14,
+    fontWeight: '700',
+  },
+
+  primaryButton: {
+    backgroundColor: '#4A90E2',
+    borderRadius: 20,
+    paddingVertical: 20,
+    alignItems: 'center',
+    marginTop: 8,
+    shadowColor: '#4A90E2',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.4,
+    shadowRadius: 16,
+    elevation: 12,
+    transform: [{ scale: 1 }],
+  },
+  primaryButtonText: {
+    color: '#FFFFFF',
+    fontSize: 17,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+  googleButton: {
+    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    borderRadius: 20,
+    paddingVertical: 18,
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+    marginTop: 16,
+  },
+  googleButtonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+    marginLeft: 12,
+  },
+  googleIcon: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+  },
+
+  divider: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 32,
+  },
+  dividerLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  dividerText: {
+    color: 'rgba(255, 255, 255, 0.5)',
+    paddingHorizontal: 20,
+    fontSize: 14,
+    fontWeight: '600',
+  },
+
+  featureGrid: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 32,
+    marginBottom: 24,
+  },
+  featureItem: {
+    alignItems: 'center',
+    flex: 1,
+    padding: 16,
+  },
+  featureIconContainer: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: 'rgba(74, 144, 226, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: 'rgba(74, 144, 226, 0.3)',
+  },
+  featureIcon: {
+    fontSize: 24,
+    color: '#4A90E2',
+  },
+  featureText: {
+    fontSize: 12,
+    color: 'rgba(255, 255, 255, 0.7)',
+    textAlign: 'center',
+    fontWeight: '500',
+    lineHeight: 16,
+  },
+
+  footer: {
+    alignItems: 'center',
+    marginTop: 'auto',
+    paddingTop: 24,
+  },
+  footerText: {
+    color: 'rgba(255, 255, 255, 0.6)',
+    fontSize: 15,
+    marginBottom: 12,
+  },
+  link: {
+    color: '#4A90E2',
+    fontSize: 16,
+    fontWeight: '600',
+    textDecorationLine: 'underline',
+  },
+
+  floatingElement1: {
+    position: 'absolute',
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    backgroundColor: 'rgba(255, 107, 53, 0.1)',
+    top: '30%',
+    left: '10%',
+  },
+  floatingElement2: {
+    position: 'absolute',
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: 'rgba(116, 82, 255, 0.1)',
+    bottom: '20%',
+    right: '15%',
+  },
+});
