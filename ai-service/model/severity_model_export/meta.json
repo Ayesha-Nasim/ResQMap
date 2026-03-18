@@ -1,0 +1,14 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "max_len": 256,
+  "id2label": {
+    "0": "low",
+    "1": "moderate",
+    "2": "high"
+  },
+  "label2id": {
+    "low": 0,
+    "moderate": 1,
+    "high": 2
+  }
+}
